@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Start and stop dump1090 in networking and daemon mode.
+case "$1" in 
+	start)
+		echo  -n "Starting dump1090 daemon "
+		start-stop-daemon -S -b -n dump1090 -a /usr/bin/dump1090 -- --net --quiet && echo " -  Sucessfully started dump1090" || echo " -  Failed to start dump1090"
+		;;
+	stop)
+		echo -n "Stopping dump1090 daemon "
+		start-stop-daemon -K -n dump1090 -a /usr/bin/dump1090 && echo " -  Sucessfully stopped dump1090" || echo " -  Failed to stop dump1090"
+		;;
+	*)
+		echo "Usage $0 {start|stop}"
+	exit 1
+esac
