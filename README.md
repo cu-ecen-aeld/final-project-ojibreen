@@ -1,3 +1,2 @@
-# Final Project
-
-[Final Project Overview](https://github.com/cu-ecen-aeld/final-project-ojibreen/wiki/Project-Overview)
+# Final Project README
+[Final Project Overview Page](https://github.com/cu-ecen-aeld/final-project-ojibreen/wiki/Final-Project-Overview)
